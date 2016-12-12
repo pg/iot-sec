@@ -1,7 +1,0 @@
-{
-    "broker": "code.petergebhard.com",
-    "topic": "iot-sec-dev",
-    "sensor_pin": 13,
-    "ssid": "spurbird",
-    "pw": "1013198709171984"
-}
