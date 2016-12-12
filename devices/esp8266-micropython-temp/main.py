@@ -8,7 +8,6 @@ import network
 from umqtt.simple import MQTTClient
 import dht
 
-# These defaults are overwritten with the contents of /config.json by load_config()
 CONFIG = {}
 dht_sensor = None
 client_id = b"esp8266_" + ubinascii.hexlify(machine.unique_id())
@@ -60,7 +59,7 @@ def main():
         topic_str = CONFIG['topic']
         client.publish(topic_str,bytes(data, 'utf-8'))
         print('Sensor state: {}'.format(data))
-        go_to_sleep()
+        #go_to_sleep()
 
 if __name__ == '__main__':
     load_config()
